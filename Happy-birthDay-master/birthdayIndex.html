@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>邱肇塬 3 月 24 日生日快乐</title>
+    <title>邱肇塬生日快乐</title>
     <style>
         :root {
             --bg: #121212;
@@ -13,6 +13,7 @@
             --muted: #b9b1aa;
             --red: #ff4b4b;
             --gold: #ffd700;
+            --mint: #7ef7d4;
             --shadow: 0 24px 64px rgba(0, 0, 0, 0.42);
         }
 
@@ -86,8 +87,8 @@
 
         .hero-title {
             margin-top: 18px;
-            font-size: clamp(38px, 9vw, 74px);
-            line-height: 1.1;
+            font-size: clamp(40px, 9vw, 76px);
+            line-height: 1.08;
         }
 
         .hero-copy {
@@ -308,7 +309,7 @@
         .closing {
             position: relative;
             z-index: 1;
-            width: min(760px, 100%);
+            width: min(800px, 100%);
             margin: 0 auto;
         }
 
@@ -323,6 +324,25 @@
             color: var(--muted);
             font-size: clamp(17px, 2.8vw, 22px);
             line-height: 2;
+        }
+
+        .final-highlight {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 14px 22px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.22), rgba(126, 247, 212, 0.18));
+            border: 1px solid rgba(126, 247, 212, 0.35);
+            color: #fffaf2;
+            font-size: clamp(20px, 3.2vw, 28px);
+            font-weight: 700;
+            line-height: 1.75;
+            text-shadow: 0 0 22px rgba(126, 247, 212, 0.22);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+        }
+
+        .final-highlight .accent {
+            color: var(--mint);
         }
 
         .signature {
@@ -370,6 +390,11 @@
             .vinyl-area {
                 min-height: 280px;
             }
+
+            .final-highlight {
+                width: 100%;
+                padding: 14px 16px;
+            }
         }
     </style>
 </head>
@@ -378,7 +403,7 @@
         <section class="section">
             <div class="shell hero-shell">
                 <div class="eyebrow">Birthday Vinyl Letter</div>
-                <h1 class="hero-title">邱肇塬<br>3 月 24 日生日快乐</h1>
+                <h1 class="hero-title">邱肇塬<br>生日快乐</h1>
                 <p class="hero-copy">
                     这是一张写给你的生日唱片。
                     黑夜做底，黑胶旋转，灯光慢慢落下来。
@@ -514,8 +539,11 @@
                         祝你新的一年不要再随便生气，不要再随便打官司。
                         愿你少一点被琐事拉扯，多一点被好事命中。
                         愿 22 岁的邱肇塬，在热烈的烟花下，仍旧走自己的路，
-                        但这一路，顺风、顺心、顺意。
                     </p>
+                    <div class="final-highlight">
+                        但这一路，<br>
+                        <span class="accent">顺风、顺心、顺意。</span>
+                    </div>
                     <div class="signature">HAPPY BIRTHDAY / 03.24</div>
                 </div>
             </div>
