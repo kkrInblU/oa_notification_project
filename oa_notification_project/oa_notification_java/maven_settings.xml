@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    
+    <!-- 指定一个你有权限的本地目录，迁移到子目录以保持项目整洁 -->
+    <localRepository>d:\AiCoding\Trae\codex\oa_notification_project\oa_notification_java\.m2\repository</localRepository>
+    
+    <mirrors>
+        <!-- 建议顺便配上阿里云镜像，加快下载速度 -->
+        <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+    </mirrors>
+</settings>

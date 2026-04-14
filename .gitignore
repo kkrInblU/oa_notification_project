@@ -1,6 +1,6 @@
 # Local Maven repository
-oa_notification_java/
 .m2/
+oa_notification_project/oa_notification_java/.m2/
 
 # Maven output
 **/target/

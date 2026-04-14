@@ -1,0 +1,59 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: oa-notification-java
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:127.0.0.1}:${DB_PORT:3306}/${DB_NAME:oa_notifications}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: ${DB_USER:root}
+    password: ${DB_PASS:1234}
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+  mail:
+    host: ${MAIL_HOST:smtp.qq.com}
+    port: ${MAIL_PORT:465}
+    username: ${MAIL_USER:}
+    password: ${MAIL_PASS:}
+    protocol: ${MAIL_PROTOCOL:smtps}
+    default-encoding: UTF-8
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+logging:
+  level:
+    com.gdut.oanotification: info
+
+oa:
+  base-url: ${OA_BASE_URL:https://oa.gdut.edu.cn}
+  miniapp:
+    enabled: ${OA_MINIAPP_ENABLED:false}
+    app-id: ${OA_MINIAPP_APP_ID:}
+    secret: ${OA_MINIAPP_SECRET:}
+    subscribe-template-id: ${OA_MINIAPP_SUBSCRIBE_TEMPLATE_ID:}
+    subscribe-page: ${OA_MINIAPP_SUBSCRIBE_PAGE:pages/detail/detail}
+    access-token-url: ${OA_MINIAPP_ACCESS_TOKEN_URL:https://api.weixin.qq.com/cgi-bin/token}
+    code2session-url: ${OA_MINIAPP_CODE2SESSION_URL:https://api.weixin.qq.com/sns/jscode2session}
+    subscribe-send-url: ${OA_MINIAPP_SUBSCRIBE_SEND_URL:https://api.weixin.qq.com/cgi-bin/message/subscribe/send}
+    miniprogram-state: ${OA_MINIAPP_MINIPROGRAM_STATE:developer}
+    lang: ${OA_MINIAPP_LANG:zh_CN}
+  delivery:
+    default-from-email: ${OA_DELIVERY_FROM_EMAIL:}
+    default-recipient-email: ${OA_DELIVERY_RECIPIENT_EMAIL:}
+  crawler:
+    python-command: ${OA_CRAWLER_PYTHON:python}
+    script-path: ${OA_CRAWLER_SCRIPT:../oa_crawler_main.py}
+    working-directory: ${OA_CRAWLER_WORKDIR:..}
