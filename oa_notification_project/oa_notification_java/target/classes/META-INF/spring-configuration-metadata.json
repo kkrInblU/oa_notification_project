@@ -1,0 +1,111 @@
+{
+  "groups": [
+    {
+      "name": "oa",
+      "type": "com.gdut.oanotification.config.OaProperties",
+      "sourceType": "com.gdut.oanotification.config.OaProperties"
+    },
+    {
+      "name": "oa.crawler",
+      "type": "com.gdut.oanotification.config.OaProperties$Crawler",
+      "sourceType": "com.gdut.oanotification.config.OaProperties",
+      "sourceMethod": "getCrawler()"
+    },
+    {
+      "name": "oa.delivery",
+      "type": "com.gdut.oanotification.config.OaProperties$Delivery",
+      "sourceType": "com.gdut.oanotification.config.OaProperties",
+      "sourceMethod": "getDelivery()"
+    },
+    {
+      "name": "oa.miniapp",
+      "type": "com.gdut.oanotification.config.OaProperties$Miniapp",
+      "sourceType": "com.gdut.oanotification.config.OaProperties",
+      "sourceMethod": "getMiniapp()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oa.base-url",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties"
+    },
+    {
+      "name": "oa.crawler.python-command",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Crawler"
+    },
+    {
+      "name": "oa.crawler.script-path",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Crawler"
+    },
+    {
+      "name": "oa.crawler.working-directory",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Crawler"
+    },
+    {
+      "name": "oa.delivery.default-from-email",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Delivery"
+    },
+    {
+      "name": "oa.delivery.default-recipient-email",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Delivery"
+    },
+    {
+      "name": "oa.miniapp.access-token-url",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.app-id",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.code2session-url",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp",
+      "defaultValue": false
+    },
+    {
+      "name": "oa.miniapp.lang",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.miniprogram-state",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.subscribe-page",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.subscribe-send-url",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    },
+    {
+      "name": "oa.miniapp.subscribe-template-id",
+      "type": "java.lang.String",
+      "sourceType": "com.gdut.oanotification.config.OaProperties$Miniapp"
+    }
+  ],
+  "hints": []
+}
